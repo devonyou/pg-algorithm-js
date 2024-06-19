@@ -7,7 +7,5 @@ function solution(s){
     const countP = fn(s, 'P')
     const countY = fn(s, 'Y')
 
-    if (!countP && !countY) return true
-    else if (countP !== countY) return false
-    else if (countP === countY) return true
+    return countP === countY
 }
