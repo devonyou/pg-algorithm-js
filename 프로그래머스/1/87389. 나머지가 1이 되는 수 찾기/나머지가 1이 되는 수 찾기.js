@@ -1,14 +1,4 @@
 function solution(n) {
-    let result;
-    let flg = true
-    let i = 0
-    while(flg){
-        i++
-        if(n % i === 1){
-            result = i
-            flg = false
-        }
-        
-    }
-    return result
+    let result = 0
+    while(++result) if(n % result === 1) return result
 }
