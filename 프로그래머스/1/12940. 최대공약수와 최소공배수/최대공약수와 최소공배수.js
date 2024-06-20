@@ -9,7 +9,12 @@ function solution(n, m) {
     
     
     function getMinCommonMultiple(a, b){
-        return Math.abs(a * b) / getMaxCommonDivisor(a, b);
+        // return Math.abs(a * b) / getMaxCommonDivisor(a, b);
+        let i = Math.max(a, b) - 1
+        while (++i) {
+            if (!(i % a) && !(i % b)) break
+        }
+        return i
     }
     
     const max_common_divisor = getMaxCommonDivisor(n, m)
