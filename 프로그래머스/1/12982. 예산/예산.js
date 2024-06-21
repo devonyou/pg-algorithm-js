@@ -1,13 +1,16 @@
 function solution(d, budget) {
-    const list = d.sort((a, b) => a - b)
     let sum = 0
-    let i = 0
-    
-    while(sum <= budget){
-        sum += d[i]
-        i++
-    }
-    
-    return i-1
+    const count = d
+        .sort((a, b) => a - b)
+        .reduce((acc, v, i) => {
+            sum += v
+            if (sum <= budget) {
+                return (acc += 1)
+            } else {
+                return acc
+            }
+        }, 0)
+
+    return count
     
 }
