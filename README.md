@@ -1,2 +1,3 @@
-# pg-algorithm-js
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+## 그리디 알고리즘 (체육복)
+
+(https://school.programmers.co.kr/learn/courses/30/lessons/42862)
